@@ -1,0 +1,37 @@
+/* Auto-generated theme overrides */
+/* Ensure image/figure captions are centered (V2) */
+.figure .caption, div.figure p.caption, figure figcaption, div.figure .legend,
+.figure.align-left .caption, .figure.align-right .caption,
+div.figure.align-left p.caption, div.figure.align-right p.caption,
+figure.align-left figcaption, figure.align-right figcaption,
+div.figure.align-left .legend, div.figure.align-right .legend { text-align: center !important; }
+.figure:not(.align-left):not(.align-right) > img, div.figure:not(.align-left):not(.align-right) > a > img { display:block; margin-left:auto; margin-right:auto; }
+.rst-content img:not(.align-left):not(.align-right) { display:block; margin-left:auto; margin-right:auto; }
+.rst-content img:not(.align-left):not(.align-right) + p { text-align:center; }
+/* Table alignment helpers for csv-table (docutils) */
+table.docutils.align-left, .wy-table-responsive table.align-left, div.align-left table, table.align-left { margin-left: 0 !important; margin-right: auto !important; }
+table.docutils.align-center, .wy-table-responsive table.align-center, div.align-center table, table.align-center { margin-left: auto !important; margin-right: auto !important; }
+table.docutils.align-right, .wy-table-responsive table.align-right, div.align-right table, table.align-right { margin-left: auto !important; margin-right: 0 !important; }
+/* RTD responsive wrapper forces width:100%/display:block; override when explicit alignment is set */
+.wy-table-responsive table.align-left, .wy-table-responsive table.align-center, .wy-table-responsive table.align-right { display: table !important; width: auto !important; }
+/* Ensure table caption shows above and centered */
+table.docutils caption, .rst-content table caption { caption-side: top !important; display: table-caption !important; text-align: center !important; font-weight: 600; padding: 4px 0 10px; }
+/* Allow table to use natural width unless widths specified */
+table.docutils { width: auto; border-collapse: collapse; }
+.rst-content table.docutils th, .rst-content table.docutils td { border: 1px solid #dcdcdc; padding: 6px 10px; }
+.rst-content table.docutils thead th { background: #f7f7f7; font-weight: 600; }
+/* PyData/Furo adjustments */
+.bd-content table.docutils, .content table.docutils { border-collapse: collapse; }
+.bd-content table.docutils th, .bd-content table.docutils td, .content table.docutils th, .content table.docutils td { border: 1px solid #dcdcdc; padding: 6px 10px; }
+.bd-content table.docutils thead th, .content table.docutils thead th { background: #f7f7f7; font-weight: 600; }
+/* Multiline project name support */
+.wy-side-nav-search > a, .wy-side-nav-search > div.project, .sidebar-brand, .bd-sidebar .navbar-brand, .md-header__title { white-space: pre-line !important; line-height:1.15; }
+#indices-and-tables, h1#indices-and-tables, h2#indices-and-tables { display:none !important; }
+.rst-content img, .bd-content img, .md-content img { cursor: zoom-in; }
+.wy-nav-content { max-width: 100.0% !important; }
+.content, .bd-content, .bd-main .bd-content .bd-article-container, .bd-page-width { max-width: 100.0% !important; }
+.md-grid { max-width: 100.0% !important; }
+/* Emphasize sidebar anchors for better visibility (non-invasive when animations enabled) */
+.wy-menu-vertical a, .bd-sidebar nav a, .md-nav__link { font-weight:600 !important; line-height:1.25 !important; }
+.wy-menu-vertical a, .bd-sidebar nav a, .md-nav__link { font-size:15px !important; }
+.wy-menu-vertical li.current > a, .bd-sidebar nav a.current, .md-nav__link--active { font-weight:700 !important; }
