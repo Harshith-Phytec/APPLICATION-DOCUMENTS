@@ -1,0 +1,25 @@
+/* Logo sizing + header cleanup */
+/* ReadTheDocs (and similar) theme selectors */
+.wy-side-nav-search a img,
+.wy-side-nav-search img,
+.wy-side-nav-search > a > img,
+.wy-side-nav-search .wy-dropdown > a img,
+a.icon.icon-home img,
+img.logo,
+.logo,
+.icon-home img {
+    display: block !important;
+    margin: 0 auto !important;
+    width: 90% !important;
+    height: auto !important;
+    max-width: 90% !important;
+    transform: none !important;
+    border-radius: 0px !important;
+}
+
+/* Reduce unused space above/below logo area */
+.wy-side-nav-search {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
